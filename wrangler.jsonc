@@ -1,0 +1,15 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "rutagram",
+  "main": "src/worker/index.ts",
+  "compatibility_date": "2026-10-20",
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"]
+  }
+  // Cuando crees D1, añade aquí:
+  // ,"d1_databases": [
+  //   { "binding": "DB", "database_name": "rutagram-db", "database_id": "REEMPLAZAR_CON_ID_REAL" }
+  // ]
+}
